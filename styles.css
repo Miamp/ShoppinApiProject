@@ -1,0 +1,52 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.alineacion {
+    margin: 0;
+}
+
+.navSuperior {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    background-color: #297350;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.a{
+text-decoration: none;
+}
+
+.search {
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: #297350;
+}
+
+.search::after {
+    text-decoration: dashed;
+
+}
+
+.button {
+    color: #010B05;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #F2B6A0;
+    border-radius: 10px;
+
+}
+
+.menuLeft {
+    width: 250px;
+    height: auto;
+    background-color: burlywood;
+}
+
+.principal {
+    background-color: #297350;
+
+}
