@@ -16,8 +16,14 @@ body {
     border-bottom-left-radius: 50px;
 }
 
-.a{
-text-decoration: none;
+.navSuperior-links a:link,
+.navSuperior-links a:visited,
+.navSuperior-links a:hover,
+.navSuperior-links a:active {
+    color: #F2B1A2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .search {
