@@ -1,32 +1,52 @@
-import fetch from "node-fetch"  //Importar fetch
-
-/*  const allProducts = fetch('https://fakestoreapi.com/products')
-    .then(res => res.json())
-    .then(json => console.log(json))*/
+window.onload = ((event) => {
+    allProducts()
+});
 
 async function allProducts() {
-    const allProducts = "https://fakestoreapi.com/products";
-    const respuestaAllProducts = await fetch(allProducts);
+    var allProducts = "https://fakestoreapi.com/products?limit=8";
+    var respuestaAllProducts = await fetch(allProducts);
     var respJsonP = await respuestaAllProducts.json();
-    //console.log(respJsonP);
     var productos = respJsonP;
+    let contenido = document.getElementById("contenido")
+    
+
     productos.forEach((elemento, indice, arreglo) => {
-        let contenido = document.getElementById("contenido")
-        contenido.innerHtml = `
-        <div class="card" style="width: 18rem;">
-        <img src=${elemento.image} class="card-img-top" alt="${elemento.id}">
-        <div class="card-body">
-            <h5 class="card-title">Tittle</h5>
-            <p class="card-text">Mini descripcion</p>
-            <a href="#" class="btn btn-primary">Detalles</a>
+        contenido.innerHTML +=
+            `
+        <div class="card cardDetalles" style="width: 13rem;">
+            <img class="imagen" src=${elemento.image} class="card-img-top" alt="${elemento.id}">
+            <div class="card-body">
+                <h5 class="card-title">${elemento.title}</h5>
+                <p class="card-text">${elemento.price}</p>
+                <a href="#" class="btn btn-primary">Detalles</a>
+            </div>
         </div>
-    </div>
     `
+
     })
 }
 
+async function Electronicos (){
+    var allelectronicos = "https://fakestoreapi.com/products/category/electronics";
+    var respuestaElectronicos = await fetch (allelectronicos);
+    var respElectronicos = await respuestaElectronicos.json();
+    var electronicos = respElectronicos;
+    console.log(respElectronicos);
 
+    let contenido = document.getElementById("contenido")
+    electronicos.forEach((elemento, indice, arreglo) => {
+        contenido.innerHTML +=
+            `
+        <div class="card cardDetalles" style="width: 13rem;">
+            <img class="imagen" src=${elemento.image} class="card-img-top" alt="${elemento.id}">
+            <div class="card-body">
+                <h5 class="card-title">${elemento.title}</h5>
+                <p class="card-text">${elemento.price}</p>
+                <a href="#" class="btn btn-primary">Detalles</a>
+            </div>
+        </div>
+    `
 
-module.exports={
-    allProducts,
+    }) 
+
 }

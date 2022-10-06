@@ -12,6 +12,7 @@ body {
     padding-top: 10px;
     padding-bottom: 5px;
     padding-right: 80px;
+    margin-right: 15px;
     background-color: #297350;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -57,10 +58,46 @@ main {
 .menuLeft {
     width: 250px;
     height: auto;
+    padding-left: 0px;
+}
+
+.categorias{
+    color: #F2B1A2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.categorias a:link,
+.categorias a:visited,
+.categorias a:hover,
+.categorias a:active {
+    color: whitesmoke;
+    background-color: #297350;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .contenido{
+    width: 100%;
     height: auto;
-    background-color: #297350;
+    margin-left: 80px;
 
+}
+
+.cardDetalles{
+    height: 500px;
+    background-color: #F2F2F2;
+    margin:10px;
+    font-family: 'Hind', sans-serif;
+}
+.card-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;   
+}
+
+.imagen{
+    height: 230px;
 }
