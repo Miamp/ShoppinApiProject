@@ -13,7 +13,7 @@ body {
     padding-bottom: 5px;
     padding-right: 80px;
     margin-right: 15px;
-    background-color: #297350;
+    background-color: #28594B;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
 }
@@ -59,9 +59,13 @@ main {
     width: 250px;
     height: auto;
     padding-left: 0px;
+    border: 3px solid #28594B;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+
 }
 
-.categorias{
+.categoria{
     color: #F2B1A2;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -69,15 +73,32 @@ main {
     text-decoration: none;
 }
 
-.categorias a:link,
-.categorias a:visited,
-.categorias a:hover,
-.categorias a:active {
+.categoriaVerde a:link,
+.categoriaVerde a:visited,
+.categoriaVerde a:hover,
+.categoriaVerde a:active {
     color: whitesmoke;
     background-color: #297350;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    font-size: 22px;
     text-decoration: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.categoriaRosa a:link,
+.categoriaRosa a:visited,
+.categoriaRosa a:hover,
+.categoriaRosa a:active {
+    color: whitesmoke;
+    background-color: #F2B1A2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    text-decoration: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .contenido{
@@ -92,6 +113,7 @@ main {
     background-color: #F2F2F2;
     margin:10px;
     font-family: 'Hind', sans-serif;
+    font-size: 20px;
 }
 .card-title{
     font-family: 'Montserrat', sans-serif;
@@ -100,4 +122,18 @@ main {
 
 .imagen{
     height: 230px;
+}
+
+.footerDetalles{
+    width: 99%;
+    height: 80px;
+    margin-right: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #010B05;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
 }

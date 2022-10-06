@@ -25,7 +25,7 @@
                 <button type="button" id="button" class="button" onclick="searchObject">Buscar</button>
 
                 <li class="nav-item navSuperior-links">
-                    <a class="nav-link " href="#">Inicio</a>
+                    <a class="nav-link " onclick="inicio()">Inicio</a>
                 </li>
                 <li class="nav-item navSuperior-links">
                     <a class="nav-link" href="#">Cuenta</a>
@@ -39,20 +39,20 @@
         <div class="container alineacion">
             <div class="row justify-items-start">
                 <div class="col menuLeft">
-                    <ul class="nav flex-column categorias">
-                        <li class="nav-item">
-                          <a class="nav-link" onclick="Electronicos()">Electronicos</a>
+                    <ul class="nav flex-column categoria">
+                        <li class="nav-item categoriaVerde">
+                            <a class="nav-link" onclick="Electronicos()">Electronicos</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Joyeria</a>
+                        <li class="nav-item categoriaRosa">
+                            <a class="nav-link" onclick="Joyeria()">Joyeria</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item categoriaVerde">
+                            <a class="nav-link" onclick="ropaH()">Ropa para Hombre</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled">Disabled</a>
+                        <li class="nav-item categoriaRosa">
+                            <a class="nav-link" onclick="ropaM()">Ropa para Mujer</a>
                         </li>
-                      </ul>
+                    </ul>
                 </div>
                 <div class="col-10">
                     <div class=" row contenido" id="contenido">
@@ -63,6 +63,13 @@
             </div>
         </div>
     </main>
+
+    <footer>
+        <div class="container-fluid footerDetalles alineacion center">
+            Project ShoppingApp by Milly Martz
+        </div>
+
+    </footer>
 
 
 
