@@ -1,6 +1,7 @@
 body {
     width: 100vw;
     height: 100vh;
+    background-color: #F2F2F2;
 }
 
 .alineacion {
@@ -10,7 +11,7 @@ body {
 .navSuperior {
     padding-top: 10px;
     padding-bottom: 5px;
-    padding-right: 15px;
+    padding-right: 80px;
     background-color: #297350;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -26,18 +27,18 @@ body {
     text-decoration: none;
 }
 
+.navSuperior-links a:hover{
+    color: white;
+}
+
 .search {
     border-radius: 10px;
     border-width: 3px;
     border-color: #297350;
 }
 
-.search::after {
-    text-decoration: dashed;
-
-}
-
 .button {
+    width: 80px;
     color: #010B05;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -46,13 +47,20 @@ body {
 
 }
 
+.button:hover{
+    background-color: #F2F2F2;
+}
+
+main {
+    margin-top: 50px;
+}
 .menuLeft {
     width: 250px;
     height: auto;
-    background-color: burlywood;
 }
 
 .principal {
+    height: auto;
     background-color: #297350;
 
 }
