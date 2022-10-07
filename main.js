@@ -1,4 +1,4 @@
-import fetch from "node-fetch"
+
 window.onload = ((event) => {
     allProducts()
 });
