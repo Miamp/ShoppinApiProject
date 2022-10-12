@@ -1,7 +1,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #F2F2F2;
+    background-color: #FFFFFF;
 }
 
 .alineacion {
@@ -9,27 +9,35 @@ body {
 }
 
 .navSuperior {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    padding-right: 80px;
+    width: 99vw;
+    padding: 10px 50px 5px 0px;
     margin-right: 15px;
     background-color: #28594B;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
 }
 
+
+
 .navSuperior-links a:link,
 .navSuperior-links a:visited,
 .navSuperior-links a:hover,
 .navSuperior-links a:active {
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    background-color: #F2B1A2;
+}
+
+.nav-link{
+    height: 40px;
     color: #F2B1A2;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    font-size: 18px;
     text-decoration: none;
-}
-
-.navSuperior-links a:hover{
-    color: white;
+    padding: 8px 12px 8px 12px;
+    margin: 0px 5px 0px 5px;
 }
 
 .search {
@@ -38,18 +46,35 @@ body {
     border-color: #297350;
 }
 
+.search:focus{
+    border: 3px #F2B1A2;
+    border-style:ridge;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
 .button {
-    width: 80px;
-    color: #010B05;
+    width: 50px;
+    color: white;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 17px;
     background-color: #F2B6A0;
-    border-radius: 10px;
+    border: 1px ;
+    border-radius: 8px;
+    margin-left: 8px;
 
 }
 
 .button:hover{
-    background-color: #F2F2F2;
+    color: #F2B1A2;
+    background-color: white;
+    border: 1px solid #F2B1A2;
 }
 
 main {
@@ -83,7 +108,7 @@ main {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 22px;
-    text-decoration: none;
+    text-decoration: none !important;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
@@ -111,7 +136,7 @@ main {
 
 .cardDetalles{
     height: 500px;
-    background-color: #F2F2F2;
+    background-color: #FFFFFF;
     margin:10px;
     font-family: 'Hind', sans-serif;
     font-size: 20px;
